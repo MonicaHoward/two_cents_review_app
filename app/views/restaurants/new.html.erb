@@ -1,0 +1,46 @@
+<div class="pg-margin">
+  <h3>New Restaurant</h3>
+
+  <%= form_for(@restaurant) do |f| %>
+
+    <div class="field">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+
+    <div class="field">
+      <%= f.label :street %>
+      <%= f.text_field :street %>
+
+      <%= f.label :suite %>
+      <%= f.text_field :suite %>
+    </div>
+
+    <div class="field">
+      <%= f.label :city %>
+      <%= f.text_field :city %>
+
+      <%= f.label :state %>
+      <%= f.text_field :state %>
+
+      <%= f.label :zip %>
+      <%= f.text_field :zip %>
+    </div>
+
+    <div class="field">
+      <%= f.label :phone %>
+      <%= f.text_field :phone %>
+
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+
+  <% end %>
+
+
+
+</div>
