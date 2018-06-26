@@ -16,4 +16,8 @@ class RestaurantsController < ApplicationController
     end
   end
 
+  def index
+
+  end
+
 end
