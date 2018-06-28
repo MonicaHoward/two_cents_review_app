@@ -17,12 +17,11 @@
   <body class="scheme-light">
 
     <nav class="navbar navbar-dark bg-dark">
-      <span class="navbar-brand mb-0 h1 pg-margin">Navbar</span>
+      <span class="navbar-brand mb-0 h1 pg-margin"><%= link_to "Two-Cents App", restaurants_path %></span>
       <nav class="nav justify-content-end pg-margin">
-        <a class="nav-link active" href="#">home</a>
+        <a class="nav-link active" href="/restaurants">restaurants</a>
         <a class="nav-link" href="/pages/contact">contact</a>
         <a class="nav-link" href="/pages/about">about</a>
-        <a class="nav-link disabled" href="#">Disabled</a>
       </nav>
     </nav>
     <%= yield %>
