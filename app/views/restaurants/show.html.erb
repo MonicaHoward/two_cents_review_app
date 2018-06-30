@@ -8,9 +8,15 @@
       <div class="card mb-8">
         <img class="card-img-top" src="http://via.placeholder.com/600x250" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <h5 class="card-title"><%= @restaurant.name%>.com</h5>
+          <p><%= @restaurant.street %> <br> <%= @restaurant.city %>, <%= @restaurant.state %> </p>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Map</h5>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214585.61071564825!2d-97.09422235106302!3d32.82141006083449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e64c039c93ed3%3A0x1490bf9dbcbac588!2sCheddar&#39;s+Scratch+Kitchen!5e0!3m2!1sen!2sus!4v1530333403894" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
