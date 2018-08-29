@@ -1,0 +1,60 @@
+<div class="header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="header-wrap">
+          <div id="logo" class="logo">
+            <%= link_to "Two Cents App", restaurants_path %>
+          </div>
+
+          <div class="nav-wrap">
+            <nav id="mainnav" class="mainnav">
+              <ul class="menu">
+                <li>
+                  <%= link_to "Explore" %>
+                  <ul class="submenu">
+                    <li>
+                      <%= link_to "About", pages_about_path %>
+                    </li>
+                    <li>
+                      <%= link_to "Contact", pages_contact_path %>
+                    </li>
+                    <li>
+                      <%= link_to "Other Apps" %>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <%= link_to "Log In" %>
+                  <a href="login.html" title="">Log In</a>
+                </li>
+                <li>
+                  <%= link_to "Sign Up" %>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="button-header">
+              <%= link_to "Add A New Restaurant", class: "ti-plus" %>
+            </div>
+
+            <div class="show-search">
+              <button><span class="ti-search"></span></button>
+              <div class="submenu top-search search-header">
+                <form role="search" method="get" class="search-form" action="#">
+                  <label>
+                    <input type="search" class="search-field" placeholder="Search …" value="" name="search">
+                  </label>
+                  <button class="search-submit-form" title="Search now"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+              </div>
+            </div>
+            <div class="btn-menu">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
