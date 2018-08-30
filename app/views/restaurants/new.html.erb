@@ -1,46 +1,84 @@
-<div class="pg-margin">
-  <h3>New Restaurant</h3>
-
-  <%= form_for(@restaurant) do |f| %>
-
-    <div class="field">
-      <%= f.label :name %>
-      <%= f.text_field :name %>
-    </div>
-
-    <div class="field">
-      <%= f.label :street %>
-      <%= f.text_field :street %>
-
-      <%= f.label :suite %>
-      <%= f.text_field :suite %>
-    </div>
-
-    <div class="field">
-      <%= f.label :city %>
-      <%= f.text_field :city %>
-
-      <%= f.label :state %>
-      <%= f.text_field :state %>
-
-      <%= f.label :zip %>
-      <%= f.text_field :zip %>
-    </div>
-
-    <div class="field">
-      <%= f.label :phone %>
-      <%= f.text_field :phone %>
-
-      <%= f.label :email %>
-      <%= f.text_field :email %>
-    </div>
-
-    <div class="actions">
-      <%= f.submit %>
-    </div>
-
-  <% end %>
+<section class="page-title parallax parallax1">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="page-title-heading">
+          Add a Restaurant
+        </div>
+        <ul class="breadcrumbs">
+          <li>
+            <a href="index.html" title="">Home</a>
+            <span class="arrow_right"></span>
+          </li>
+          <li>
+            Add New Restaurant
+          </li>
+        </ul>
+      </div><!-- /.col-md-12 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+  <div class="overlay"></div>
+</section><!-- /.page-title -->
 
 
+<section class="flat-listing">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
 
-</div>
+        <form action="#" class="form-listing" method="get" accept-charset="utf-8">
+          <div class="inner-box">
+            <p>To add a new restaurant you must sign in<br/>If you don't have an account please create one to continue</p>
+            <div class="btn-more">
+              <%= link_to "Sign In", root_path %>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </form>
+
+        <div class="row">
+          <div class="col-md-12">
+
+            <%= form_for(@restaurant) do |f| %>
+              <div class="wrap-listing your-email">
+                <%= f.label :name %>
+                <%= f.text_field :name %>
+              </div>
+
+              <div class="wrap-listing your-email">
+                <%= f.label :street %>
+                <%= f.text_field :street %>
+
+                <%= f.label :suite %>
+                <%= f.text_field :suite %>
+              </div>
+
+              <div class="wrap-listing your-email">
+                <%= f.label :city %>
+                <%= f.text_field :city %>
+
+                <%= f.label :state %>
+                <%= f.text_field :state %>
+
+                <%= f.label :zip %>
+                <%= f.text_field :zip %>
+              </div>
+
+              <div class="wrap-listing your-email">
+                <%= f.label :phone %>
+                <%= f.text_field :phone %>
+
+                <%= f.label "Website" %>
+                <%= f.text_field :email %>
+              </div>
+
+              <div class="actions">
+                <%= f.submit %>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div><!-- /.col-md-12 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.flat-listing -->
