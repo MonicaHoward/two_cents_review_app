@@ -1,67 +1,230 @@
-<div class="pg-margin">
-  <h3>Restaurants</h3>
-
-
+<section class="page-title parallax parallax1">
   <div class="container">
     <div class="row">
-
-      <div class="card text-white bg-primary mb-3 mx-auto" style="max-width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Info card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <div class="col-md-12">
+        <div class="page-title-heading">
+          Restaurant Listing
         </div>
-      </div>
+        <ul class="breadcrumbs">
+          <li>
+            <a href="index.html" title="">Home</a>
+            <span class="arrow_right"></span>
+          </li>
+          <li>
+            Restaurants
+          </li>
+        </ul>
+      </div><!-- /.col-md-12 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+  <div class="overlay"></div>
+</section><!-- /.page-title -->
 
-      <div class="card text-white bg-primary mb-3 mx-auto" style="max-width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Info card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+<section class="flat-row flat-imagebox style3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="arrange">
+          <li class="active">
+            <span class="ti-view-grid"></span>
+          </li>
+          <li>
+            <span class="ti-view-list"></span>
+          </li>
+        </ul>
+      </div><!-- /.col-md-12 -->
+    </div><!-- /.row -->
+
+    <div class="wrap-imagebox style3">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="imagebox style2">
+            <div class="box-imagebox">
+              <div class="box-header">
+                <div class="box-image">
+                  <img src="images/page/img-v2-01.png" alt="">
+                  <a href="#" title="">Preview</a>
+                </div>
+              </div><!-- /.box-header -->
+              <div class="box-content">
+                <div class="box-title ad">
+                  <span>Ad</span><a href="#" title=""><%= @restaurant.name %></a><i class="fa fa-check-circle" aria-hidden="true"></i>
+                  <div class="queue">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <ul class="rating">
+                  <li>5 rating</li>
+                  <li>Moderate</li>
+                  <li>Restaurant</li>
+                </ul>
+                <div class="box-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </div>
+                <ul class="location">
+                  <li class="address"><span class="ti-location-pin"></span>Hanoi, Vietnam</li>
+                  <li class="closed">Closed Now !</li>
+                </ul>
+              </div><!-- /.box-content -->
+            </div><!-- /.box-imagebox -->
+          </div><!-- /.imagebox style2 -->
+        </div><!-- /.col-sm-12 -->
+        <div class="col-sm-12">
+          <div class="imagebox style2">
+            <div class="box-imagebox">
+              <div class="box-header">
+                <div class="box-image">
+                  <img src="images/page/img-v2-02.png" alt="">
+                  <a href="#" title="">Preview</a>
+                </div>
+              </div><!-- /.box-header -->
+              <div class="box-content">
+                <div class="box-title">
+                  <a href="#" title="">Acantara</a><i class="fa fa-check-circle" aria-hidden="true"></i>
+                  <div class="queue">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <ul class="rating">
+                  <li>10 rating</li>
+                  <li>Ultra High End</li>
+                  <li>Hotel</li>
+                </ul>
+                <div class="box-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </div>
+                <ul class="location">
+                  <li class="address"><span class="ti-location-pin"></span>Seoul, Korea</li>
+                  <li class="open">Open Now !</li>
+                </ul>
+              </div><!-- /.box-content -->
+            </div><!-- /.box-imagebox -->
+          </div><!-- /.imagebox style2 -->
+        </div><!-- /.col-sm-12 -->
+        <div class="col-sm-12">
+          <div class="imagebox style2">
+            <div class="box-imagebox">
+              <div class="box-header">
+                <div class="box-image">
+                  <img src="images/page/img-v2-03.png" alt="">
+                  <a href="#" title="">Preview</a>
+                </div>
+              </div><!-- /.box-header -->
+              <div class="box-content">
+                <div class="box-title">
+                  <a href="#" title="">Intercontinental</a><i class="fa fa-check-circle" aria-hidden="true"></i>
+                  <div class="queue">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <ul class="rating">
+                  <li>6 rating</li>
+                  <li>Pricey</li>
+                  <li>Hotel</li>
+                </ul>
+                <div class="box-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </div>
+                <ul class="location">
+                  <li class="address"><span class="ti-location-pin"></span>Seoul, Korea</li>
+                  <li class="open">Open Now !</li>
+                </ul>
+              </div><!-- /.box-content -->
+            </div><!-- /.box-imagebox -->
+          </div><!-- /.imagebox style2 -->
+        </div><!-- /.col-sm-12 -->
+        <div class="col-sm-12">
+          <div class="imagebox style2">
+            <div class="box-imagebox">
+              <div class="box-header">
+                <div class="box-image">
+                  <img src="images/page/img-v2-01.png" alt="">
+                  <a href="#" title="">Preview</a>
+                </div>
+              </div><!-- /.box-header -->
+              <div class="box-content">
+                <div class="box-title ad">
+                  <span>Ad</span><a href="#" title="">AN Restaurant</a><i class="fa fa-check-circle" aria-hidden="true"></i>
+                  <div class="queue">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <ul class="rating">
+                  <li>5 rating</li>
+                  <li>Moderate</li>
+                  <li>Restaurant</li>
+                </ul>
+                <div class="box-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </div>
+                <ul class="location">
+                  <li class="address"><span class="ti-location-pin"></span>Hanoi, Vietnam</li>
+                  <li class="closed">Closed Now !</li>
+                </ul>
+              </div><!-- /.box-content -->
+            </div><!-- /.box-imagebox -->
+          </div><!-- /.imagebox style2 -->
+        </div><!-- /.col-sm-12 -->
+        <div class="col-sm-12">
+          <div class="imagebox style2">
+            <div class="box-imagebox">
+              <div class="box-header">
+                <div class="box-image">
+                  <img src="images/page/img-v2-02.png" alt="">
+                  <a href="#" title="">Preview</a>
+                </div>
+              </div><!-- /.box-header -->
+              <div class="box-content">
+                <div class="box-title">
+                  <a href="#" title="">Acantara</a><i class="fa fa-check-circle" aria-hidden="true"></i>
+                  <div class="queue">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <ul class="rating">
+                  <li>10 rating</li>
+                  <li>Ultra High End</li>
+                  <li>Hotel</li>
+                </ul>
+                <div class="box-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </div>
+                <ul class="location">
+                  <li class="address"><span class="ti-location-pin"></span>Seoul, Korea</li>
+                  <li class="open">Open Now !</li>
+                </ul>
+              </div><!-- /.box-content -->
+            </div><!-- /.box-imagebox -->
+          </div><!-- /.imagebox style2 -->
+        </div><!-- /.col-sm-12 -->
+      </div><!-- /.row -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="btn-more">
+            <a href="#" title="">Show More</a>
+          </div>
         </div>
-      </div>
-
-      <div class="card text-white bg-primary mb-3 mx-auto" style="max-width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Info card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-
+      </div><!-- /.row -->
     </div>
-
-  </div>
-
-
-<div class="nav-scroller bg-white box-shadow">
-  <div class="my-3 p-3 bg-white rounded box-shadow">
-    <h6 class="border-bottom border-gray pb-2 mb-0">Just Added</h6>
-    <div class="media text-muted pt-3">
-      <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
-      <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-        <div class="d-flex justify-content-between align-items-center w-100">
-          <strong class="text-gray-dark"> <%= @restaurant.last.name %> </strong>
-          <a href="#">Check it out</a>
-        </div>
-        <span class="d-block"><%= @restaurant.last.city%></span>
-      </div>
-    </div>
-    <div class="media text-muted pt-3">
-      <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
-      <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-        <div class="d-flex justify-content-between align-items-center w-100">
-          <strong class="text-gray-dark"> <%= @restaurant.first.name%></strong>
-          <a href="#">Check it out</a>
-        </div>
-        <span class="d-block"><%= @restaurant.first.name %></span>
-      </div>
-    </div>
-
-    <small class="d-block text-right mt-3">
-      <a href="#">View All</a>
-    </small>
-  </div>
-</main>
-
-</div>
-  <%= link_to "Add New Restaurant", new_restaurant_path, class: "btn btn-success" %>
-
-  </div>
+  </div><!-- /.container -->
+</section><!-- /.flat-imagebox style3 -->
