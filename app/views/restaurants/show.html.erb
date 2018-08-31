@@ -1,26 +1,283 @@
-<div>
-
+<section class="page-title parallax parallax1">
   <div class="container">
-    <h1><%= @restaurant.name %></h1>
-    <hr/>
-
     <div class="row">
-      <div class="card mb-8">
-        <img class="card-img-top" src="http://via.placeholder.com/600x250" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title"><%= @restaurant.name%>.com</h5>
-          <p><%= @restaurant.street %> <br> <%= @restaurant.city %>, <%= @restaurant.state %> </p>
+      <div class="col-md-12">
+        <ul class="breadcrumbs">
+          <li>
+            <%= link_to "Home", root_path %>
+          </li>
+          <li>
+            <%= link_to "Restaurants", restaurants_path %>
+          </li>
+          <li>
+            <p><%= @restaurant.name %></p>
+          </li>
+        </ul>
+      </div><!-- /.col-md-12 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+  <div class="overlay"></div>
+</section><!-- /.page-title -->
+
+<section class="flat-title">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="title-left">
+          <div class="queue">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          </div><!-- /.queue -->
+          <div class="box-title">
+            <%= link_to @restaurant.name, restaurant_path %>
+          </div><!-- /.box-title -->
+          <ul class="box-address">
+            <li class="address"><i class="fa fa-map-marker" aria-hidden="true"></i><%= @restaurant.street %> <%= @restaurant.suite %> | <%= @restaurant.city %>, <%= @restaurant.state %> <%= @restaurant.zip %></li>
+            <li class="phone"><i class="fa fa-phone" aria-hidden="true"></i><%= @restaurant.phone %></li>
+          </ul><!-- /.box-address -->
+        </div><!-- /.title-left -->
+      </div><!-- /.col-md-8 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.flat-title -->
+
+<section class="flat-row flat-explore-detail">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="text-box">
+          <h3>Your Review</h3>
+          <div class="text-desc">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <i>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla qui officia deserunt mollit anim id est laborum.</i>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+          </div>
         </div>
-      </div>
+        <div class="comment-area">
+          <h3 class="comment-title">3 Reviews</h3>
+          <ol class="comment-list">
+            <li class="comment">
+              <article class="comment-body">
+                <div class="comment-image">
+                  <img src="images/blog/comment_01.png" alt="">
+                </div><!-- /.comment-image -->
+                <div class="comment-content">
+                  <div>
+                    April 8, 2017 9:48 pm
+                  </div>
+                  <h5>
+                    The food was amazing
+                    <span>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star-half-o" aria-hidden="true"></i>
+												</span>
+                  </h5>
+                  <div class="comment-author">
+                    by <a href="#" title="">Alex luthor</a>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                  <div class="comment-like">
+                    <ul>
+                      <li>
+                        <a href="#" title=""><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 2</a>
+                      </li>
+                      <li>
+                        <a href="#" title=""><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> 0</a>
+                      </li>
+                    </ul>
+                    <div class="comment-reply">
+                      <a href="#" title="">Reply</a>
+                    </div>
+                  </div><!-- /.comment-like -->
+                </div><!-- /.comment-content -->
+              </article><!-- /.comment-body -->
+            </li><!-- /.comment -->
+            <li class="comment">
+              <article class="comment-body">
+                <div class="comment-image">
+                  <img src="images/blog/comment_02.png" alt="">
+                </div><!-- /.comment-image -->
+                <div class="comment-content">
+                  <div class="comment-metadata">
+                    April 2, 2017 5:48 pm
+                  </div>
+                  <h5>
+                    We had a great time !!!!
+                    <span>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+												</span>
+                  </h5>
+                  <div class="comment-author">
+                    by <a href="#" title="">Patricia Alice</a>
+                  </div>
+                  <p>
+                    Such a lovely place. The host met us at agreed time, showed us everything. The apartment is conveniently located, a short walk to subway, shops, and restaurants. Wi fi worked well. We had a great time.
+                  </p>
+                  <div class="comment-like">
+                    <ul>
+                      <li>
+                        <a href="#" title=""><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 5</a>
+                      </li>
+                      <li>
+                        <a href="#" title=""><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> 0</a>
+                      </li>
+                    </ul>
+                    <div class="comment-reply">
+                      <a href="#" title="">Reply</a>
+                    </div>
+                  </div><!-- /.comment-like -->
+                </div><!-- /.comment-content -->
+              </article><!-- /.comment-body -->
+            </li><!-- /.comment -->
+            <li class="comment">
+              <article class="comment-body">
+                <div class="comment-image">
+                  <img src="images/blog/comment_01.png" alt="">
+                </div><!-- /.comment-image -->
+                <div class="comment-content">
+                  <div class="comment-metadata">
+                    April 8, 2017 9:48 pm
+                  </div>
+                  <h5>
+                    The food was amazing
+                    <span>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star-half-o" aria-hidden="true"></i>
+												</span>
+                  </h5>
+                  <div class="comment-author">
+                    by <a href="#" title="">Alex luthor</a>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                  <div class="comment-like">
+                    <ul>
+                      <li>
+                        <a href="#" title=""><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 2</a>
+                      </li>
+                      <li>
+                        <a href="#" title=""><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> 0</a>
+                      </li>
+                    </ul>
+                    <div class="comment-reply">
+                      <a href="#" title="">Reply</a>
+                    </div>
+                  </div><!-- /.comment-like -->
+                </div><!-- /.comment-content -->
+              </article><!-- /.comment-body -->
+            </li><!-- /.comment -->
+          </ol><!-- /.comment-list -->
+          <div class="load-more">
+            <a href="" title="">Load More</a>
+          </div>
 
-      <div class="card mb-4">
-        <div class="card-body">
-          <h5 class="card-title">Map</h5>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214585.61071564825!2d-97.09422235106302!3d32.82141006083449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e64c039c93ed3%3A0x1490bf9dbcbac588!2sCheddar&#39;s+Scratch+Kitchen!5e0!3m2!1sen!2sus!4v1530333403894" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        </div><!-- /.comment-area -->
+      </div><!-- /.col-md-8 -->
+      <div class="col-md-4">
+        <div class="sidebar">
+          <div class="box contact-box">
+            <ul class="contact-list">
+              <li class="address"><i class="fa fa-map-marker" aria-hidden="true"></i><%= @restaurant.street %> <%= @restaurant.suite %> | <%= @restaurant.city %>, <%= @restaurant.state %> <%= @restaurant.zip %></li>
+              <li><i class="fa fa-phone" aria-hidden="true"></i><a href="#"><%= @restaurant.phone %></a></li>
+              <li><i class="fa fa-globe" aria-hidden="true"></i><a href="#" title=""><%= @restaurant.email %></a></li>
+            </ul>
+          </div>
+          <div class="involve">
+            <h4>Other Restaurants in <%= @restaurant.city %></h4>
+            <ul>
+              <li class="box">
+                <div class="img-box">
+                  <img src="images/page/small-01.png" alt="">
+                </div>
+                <div class="involve-desc">
+                  <div class="title"><a href="#" title=""><%= @restaurant.city.last %></a></div>
+                  <div class="queue">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                  </div>
+                  <p>Restaurant</p>
+                </div>
+              </li>
+              <li class="box">
+                <div class="img-box">
+                  <img src="images/page/small-02.png" alt="">
+                </div>
+                <div class="involve-desc">
+                  <div class="title"><a href="#" title="">Don Pub</a></div>
+                  <div class="queue">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </div>
+                  <p>Drink - Play</p>
+                </div>
+              </li>
+              <li class="box">
+                <div class="img-box">
+                  <img src="images/page/small-03.png" alt="">
+                </div>
+                <div class="involve-desc">
+                  <div class="title"><a href="#" title="">Alacate Hotel</a></div>
+                  <div class="queue">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </div>
+                  <p>Hotel</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </div>
+      </div><!-- /.col-md-4 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.flat-explore-detail <-->
 
-  </div>
-
-</div>
+<section class="flat-row flat-subscribe">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7">
+        <div class="subscribe-text">
+          Subscribe and be notified about new locations
+        </div>
+      </div><!-- /.col-sm-7 -->
+      <div class="col-sm-5">
+        <div class="subscribe-form">
+          <form action="#" method="get" accept-charset="utf-8">
+            <div class="subscribe-content">
+              <div class="input-field">
+                <input type="email" name="yourEmail" placeholder="Your Email" />
+              </div>
+              <button><span class="arrow_right"></span></button>
+            </div>
+          </form>
+        </div><!-- /.subscribe-form -->
+      </div><!-- /.col-sm-5 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.flat-subscibe -->
