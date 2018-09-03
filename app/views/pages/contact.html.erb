@@ -7,18 +7,18 @@
         </div>
         <ul class="breadcrumbs">
           <li>
-            <a href="index.html" title="">Home</a>
+            <%= link_to "Home" %>
             <span class="arrow_right"></span>
           </li>
           <li>
-            Contact
+            <%= link_to "Contact", pages_contact_path %>
           </li>
         </ul>
-      </div><!-- /.col-md-12 -->
-    </div><!-- /.row -->
-  </div><!-- /.container -->
+      </div>
+    </div>
+  </div>
   <div class="overlay"></div>
-</section><!-- /.page-title -->
+</section>
 
 <section class="flat-row flat-iconbox style2">
   <div class="container">
@@ -28,63 +28,58 @@
           <div class="iconbox style2">
             <div class="box-header">
               <div class="iconbox-icon">
-                <img src="images/page/address.png" alt="">
+                <%= image_tag "page/address.png" %>
               </div>
-            </div><!-- /.box-header -->
+            </div>
             <div class="box-content">
               <div class="box-desc">
                 <p>Dallas, TX</p>
               </div>
-            </div><!-- /.box-content -->
-          </div><!-- /.iconbox style2 -->
-        </div><!-- /.iconbox-item -->
-      </div><!-- /.col-md-4 -->
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="col-sm-4">
         <div class="iconbox-item">
           <div class="iconbox style2">
             <div class="box-header">
               <div class="iconbox-icon">
-                <img src="images/page/email.png" alt="">
+                <%= image_tag "page/email.png" %>
               </div>
-            </div><!-- /.box-header -->
+            </div>
             <div class="box-content">
               <div class="box-desc">
                 <p>MonicaHoward.net</p>
                 <p>jay.m.howard@gmail.com</p>
               </div>
-            </div><!-- /.box-content -->
-          </div><!-- /.iconbox style2 -->
-        </div><!-- /.iconbox-item -->
-      </div><!-- /.col-md-4 -->
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="col-sm-4">
         <div class="iconbox-item">
           <div class="iconbox style2">
             <div class="box-header">
               <div class="iconbox-icon">
-                <img src="images/page/phone.png" alt="">
+                <<%= image_tag "page/phone.png" %>
               </div>
-            </div><!-- /.box-header -->
+            </div>
             <div class="box-content">
               <div class="box-desc">
                 <p>682.220.2537</p>
               </div>
-            </div><!-- /.box-content -->
-          </div><!-- /.iconbox style2 -->
-        </div><!-- /.iconbox-item -->
-      </div><!-- /.col-md-4 -->
-    </div><!-- /.row -->
-  </div><!-- /.container -->
-</section><!-- /.flat-iconbox style2 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="flat-contact">
   <div class="contact-map">
-    <section class="pdmap style1" id="flat-map">
-      <div class="flat-maps" data-address="84 Trần Quang Diệu, Ô Chợ Dừa, Đống Đa, Hà Nội, Việt Nam" data-height="700" data-image="images/icon/map.png" data-name="Themesflat Map"></div>
-      <div class="gm-map">
-        <div class="map-2"></div>
-      </div>
-    </section><!-- /#flat-map -->
-  </div><!-- /.contact-map -->
+  <%= image_tag "https://images.pexels.com/photos/509922/pexels-photo-509922.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" %>
+  </div>
   <div class="contact-form parallax parallax1">
     <div class="contact-us">
       <h3>Contact Me</h3>
@@ -102,32 +97,8 @@
           <a href="#" title="">Send message</a>
         </div>
       </form>
-    </div><!-- /.contact-us -->
+    </div>
     <div class="overlay"></div>
-  </div><!-- /.contact-form -->
+  </div><
   <div class="clearfix"></div>
-</section><!-- /.flat-contact -->
-
-<section class="flat-row flat-subscribe">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-7">
-        <div class="subscribe-text">
-          Subscribe and be notified about new locations
-        </div>
-      </div><!-- /.col-sm-7 -->
-      <div class="col-sm-5">
-        <div class="subscribe-form">
-          <form action="#" method="get" accept-charset="utf-8">
-            <div class="subscribe-content">
-              <div class="input-field">
-                <input type="email" name="yourEmail" placeholder="Your Email" />
-              </div>
-              <button><span class="arrow_right"></span></button>
-            </div>
-          </form>
-        </div><!-- /.subscribe-form -->
-      </div><!-- /.col-sm-5 -->
-    </div><!-- /.row -->
-  </div><!-- /.container -->
-</section><!-- /.flat-subscibe -->
+</section>
