@@ -51,9 +51,10 @@
         <div class="text-box">
           <h3>Your Review</h3>
           <div class="text-desc">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <i>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla qui officia deserunt mollit anim id est laborum.</i>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            <p>Text</p>
+          </div>
+          <div>
+            <%= link_to "Edit", edit_restaurant_path, class: "btn btn-link" %>
           </div>
         </div>
         <div class="comment-area">
@@ -164,7 +165,7 @@
                     by <a href="#" title="">Alex luthor</a>
                   </div>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                   Text
                   </p>
                   <div class="comment-like">
                     <ul>
@@ -183,15 +184,16 @@
               </article><!-- /.comment-body -->
             </li><!-- /.comment -->
           </ol><!-- /.comment-list -->
-          <div class="load-more">
-            <a href="" title="">Load More</a>
-          </div>
-
 
         </div><!-- /.comment-area -->
       </div><!-- /.col-md-8 -->
       <div class="col-md-4">
         <div class="sidebar">
+          <div class="box contact-box">
+            <p>image here</p>
+            <%= @restaurant.image.url unless @restaurant.image.blank? %>
+          </div><!-- /#flat-map -->
+
           <div class="box contact-box">
             <ul class="contact-list">
               <li class="address"><i class="fa fa-map-marker" aria-hidden="true"></i><%= @restaurant.street %> <%= @restaurant.suite %> | <%= @restaurant.city %>, <%= @restaurant.state %> <%= @restaurant.zip %></li>
@@ -258,26 +260,4 @@
   </div><!-- /.container -->
 </section><!-- /.flat-explore-detail <-->
 
-<section class="flat-row flat-subscribe">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-7">
-        <div class="subscribe-text">
-          Subscribe and be notified about new locations
-        </div>
-      </div><!-- /.col-sm-7 -->
-      <div class="col-sm-5">
-        <div class="subscribe-form">
-          <form action="#" method="get" accept-charset="utf-8">
-            <div class="subscribe-content">
-              <div class="input-field">
-                <input type="email" name="yourEmail" placeholder="Your Email" />
-              </div>
-              <button><span class="arrow_right"></span></button>
-            </div>
-          </form>
-        </div><!-- /.subscribe-form -->
-      </div><!-- /.col-sm-5 -->
-    </div><!-- /.row -->
-  </div><!-- /.container -->
-</section><!-- /.flat-subscibe -->
+
