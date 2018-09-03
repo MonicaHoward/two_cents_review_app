@@ -1,6 +1,46 @@
-<h1>Edit Restaurant </h1>
+<section class="page-title parallax parallax1">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="breadcrumbs">
+          <li>
+            <%= link_to "Home", root_path %>
+          </li>
+          <li>
+            <%= link_to "Restaurants", restaurants_path %>
+          </li>
+          <li>
+           <p><%= @restaurant.name %></p>
+          </li>
+        </ul>
+      </div><!-- /.col-md-12 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+  <div class="overlay"></div>
+</section><!-- /.page-title -->
 
-<
+<section class="flat-listing">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
 
-<%= link_to 'Show', @restaurant, class: "btn btn-default" %>
-<%= link_to 'Back', restaurants_path, class: "btn btn-default" %>
+        <form action="#" class="form-listing" method="get" accept-charset="utf-8">
+          <div class="inner-box">
+            <p>You make changes</p>
+            <div class="clearfix"></div>
+          </div>
+        </form>
+
+        <div class="row">
+          <div class="col-md-12">
+            <%= render "restaurants/form" %>
+          </div>
+        </div>
+      </div><!-- /.col-md-12 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.flat-listing -->
+
+<div class="btn-more">
+  <%= link_to "Back", @restaurant_path %>
+</div>
