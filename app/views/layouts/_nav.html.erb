@@ -11,6 +11,17 @@
             <nav id="mainnav" class="mainnav">
               <ul class="menu">
                 <li>
+                  <%= link_to "Restaurants" %>
+                  <ul class="submenu">
+                    <li>
+                      <%= link_to "View All Restaurants", restaurants_path %>
+                    </li>
+                    <li>
+                      <%= link_to "Add New Restaurant", new_restaurant_path %>
+                    </li>
+                  </ul>
+                </li>
+                <li>
                   <%= link_to "Explore" %>
                   <ul class="submenu">
                     <li>
@@ -19,37 +30,13 @@
                     <li>
                       <%= link_to "Contact", pages_contact_path %>
                     </li>
-                    <li>
-                      <%= link_to "Other Apps" %>
-                    </li>
                   </ul>
-                </li>
-                <li>
-                  <%= link_to "Log In" %>
-                </li>
-                <li>
-                  <%= link_to "Sign Up" %>
                 </li>
               </ul>
             </nav>
 
             <div class="button-header">
               <%= link_to "Add A New Restaurant", new_restaurant_path, class: "ti-plus" %>
-            </div>
-
-            <div class="show-search">
-              <button><span class="ti-search"></span></button>
-              <div class="submenu top-search search-header">
-                <form role="search" method="get" class="search-form" action="#">
-                  <label>
-                    <input type="search" class="search-field" placeholder="Search …" value="" name="search">
-                  </label>
-                  <button class="search-submit-form" title="Search now"><i class="fa fa-search" aria-hidden="true"></i></button>
-                </form>
-              </div>
-            </div>
-            <div class="btn-menu">
-              <span></span>
             </div>
           </div>
         </div>
