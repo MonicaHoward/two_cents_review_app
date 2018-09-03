@@ -11,6 +11,7 @@
           </li>
           <li>
             <p><%= @restaurant.name %></p>
+
           </li>
         </ul>
       </div><!-- /.col-md-12 -->
@@ -24,13 +25,6 @@
     <div class="row">
       <div class="col-md-8">
         <div class="title-left">
-          <div class="queue">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star-half-o" aria-hidden="true"></i>
-          </div><!-- /.queue -->
           <div class="box-title">
             <%= link_to @restaurant.name, restaurant_path %>
           </div><!-- /.box-title -->
@@ -49,209 +43,26 @@
     <div class="row">
       <div class="col-md-8">
         <div class="text-box">
-          <h3>Your Review</h3>
+          <h3>Review</h3>
           <div class="text-desc">
-            <p>Text</p>
+            <!--review text goes here-->
           </div>
-          <div>
-            <%= link_to "Edit", edit_restaurant_path, class: "btn btn-link" %>
+          <div class="btn-more">
+            <%= link_to "Edit", edit_restaurant_path %>
           </div>
         </div>
-        <div class="comment-area">
-          <h3 class="comment-title">3 Reviews</h3>
-          <ol class="comment-list">
-            <li class="comment">
-              <article class="comment-body">
-                <div class="comment-image">
-                  <img src="images/blog/comment_01.png" alt="">
-                </div><!-- /.comment-image -->
-                <div class="comment-content">
-                  <div>
-                    April 8, 2017 9:48 pm
-                  </div>
-                  <h5>
-                    The food was amazing
-                    <span>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star-half-o" aria-hidden="true"></i>
-												</span>
-                  </h5>
-                  <div class="comment-author">
-                    by <a href="#" title="">Alex luthor</a>
-                  </div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
-                  <div class="comment-like">
-                    <ul>
-                      <li>
-                        <a href="#" title=""><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 2</a>
-                      </li>
-                      <li>
-                        <a href="#" title=""><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> 0</a>
-                      </li>
-                    </ul>
-                    <div class="comment-reply">
-                      <a href="#" title="">Reply</a>
-                    </div>
-                  </div><!-- /.comment-like -->
-                </div><!-- /.comment-content -->
-              </article><!-- /.comment-body -->
-            </li><!-- /.comment -->
-            <li class="comment">
-              <article class="comment-body">
-                <div class="comment-image">
-                  <img src="images/blog/comment_02.png" alt="">
-                </div><!-- /.comment-image -->
-                <div class="comment-content">
-                  <div class="comment-metadata">
-                    April 2, 2017 5:48 pm
-                  </div>
-                  <h5>
-                    We had a great time !!!!
-                    <span>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-												</span>
-                  </h5>
-                  <div class="comment-author">
-                    by <a href="#" title="">Patricia Alice</a>
-                  </div>
-                  <p>
-                    Such a lovely place. The host met us at agreed time, showed us everything. The apartment is conveniently located, a short walk to subway, shops, and restaurants. Wi fi worked well. We had a great time.
-                  </p>
-                  <div class="comment-like">
-                    <ul>
-                      <li>
-                        <a href="#" title=""><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 5</a>
-                      </li>
-                      <li>
-                        <a href="#" title=""><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> 0</a>
-                      </li>
-                    </ul>
-                    <div class="comment-reply">
-                      <a href="#" title="">Reply</a>
-                    </div>
-                  </div><!-- /.comment-like -->
-                </div><!-- /.comment-content -->
-              </article><!-- /.comment-body -->
-            </li><!-- /.comment -->
-            <li class="comment">
-              <article class="comment-body">
-                <div class="comment-image">
-                  <img src="images/blog/comment_01.png" alt="">
-                </div><!-- /.comment-image -->
-                <div class="comment-content">
-                  <div class="comment-metadata">
-                    April 8, 2017 9:48 pm
-                  </div>
-                  <h5>
-                    The food was amazing
-                    <span>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star-half-o" aria-hidden="true"></i>
-												</span>
-                  </h5>
-                  <div class="comment-author">
-                    by <a href="#" title="">Alex luthor</a>
-                  </div>
-                  <p>
-                   Text
-                  </p>
-                  <div class="comment-like">
-                    <ul>
-                      <li>
-                        <a href="#" title=""><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 2</a>
-                      </li>
-                      <li>
-                        <a href="#" title=""><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> 0</a>
-                      </li>
-                    </ul>
-                    <div class="comment-reply">
-                      <a href="#" title="">Reply</a>
-                    </div>
-                  </div><!-- /.comment-like -->
-                </div><!-- /.comment-content -->
-              </article><!-- /.comment-body -->
-            </li><!-- /.comment -->
-          </ol><!-- /.comment-list -->
-
-        </div><!-- /.comment-area -->
       </div><!-- /.col-md-8 -->
       <div class="col-md-4">
         <div class="sidebar">
           <div class="box contact-box">
-            <p>image here</p>
-            <%= @restaurant.image.url unless @restaurant.image.blank? %>
+            <%= image_tag @restaurant.image.url unless @restaurant.image.blank? %>
           </div><!-- /#flat-map -->
 
           <div class="box contact-box">
             <ul class="contact-list">
               <li class="address"><i class="fa fa-map-marker" aria-hidden="true"></i><%= @restaurant.street %> <%= @restaurant.suite %> | <%= @restaurant.city %>, <%= @restaurant.state %> <%= @restaurant.zip %></li>
-              <li><i class="fa fa-phone" aria-hidden="true"></i><a href="#"><%= @restaurant.phone %></a></li>
-              <li><i class="fa fa-globe" aria-hidden="true"></i><a href="#" title=""><%= @restaurant.email %></a></li>
-            </ul>
-          </div>
-          <div class="involve">
-            <h4>Other Restaurants in <%= @restaurant.city %></h4>
-            <ul>
-              <li class="box">
-                <div class="img-box">
-                  <img src="images/page/small-01.png" alt="">
-                </div>
-                <div class="involve-desc">
-                  <div class="title"><a href="#" title=""><%= @restaurant.city.last %></a></div>
-                  <div class="queue">
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                  </div>
-                  <p>Restaurant</p>
-                </div>
-              </li>
-              <li class="box">
-                <div class="img-box">
-                  <img src="images/page/small-02.png" alt="">
-                </div>
-                <div class="involve-desc">
-                  <div class="title"><a href="#" title="">Don Pub</a></div>
-                  <div class="queue">
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                  </div>
-                  <p>Drink - Play</p>
-                </div>
-              </li>
-              <li class="box">
-                <div class="img-box">
-                  <img src="images/page/small-03.png" alt="">
-                </div>
-                <div class="involve-desc">
-                  <div class="title"><a href="#" title="">Alacate Hotel</a></div>
-                  <div class="queue">
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                  </div>
-                  <p>Hotel</p>
-                </div>
-              </li>
+              <li><i class="fa fa-phone" aria-hidden="true"></i><%= @restaurant.phone %></li>
+              <li><i class="fa fa-globe" aria-hidden="true"></i><%= @restaurant.email %></li>
             </ul>
           </div>
         </div>

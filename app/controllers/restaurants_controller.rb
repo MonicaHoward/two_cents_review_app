@@ -9,7 +9,7 @@ class RestaurantsController < ApplicationController
   end
 
   def create
-    @restaurant = Restaurant.new(params.require(:restaurant).permit(:name, :street, :city, :state))
+    @restaurant = Restaurant.new(params.require(:restaurant).permit(:name, :street, :city, :state, :phone, :email, :image))
 
     respond_to do |format|
       if @restaurant.save
@@ -33,5 +33,5 @@ def find_restaurant
 end
 
 def restaurant_params
-  params.require(:restaurant).permit(:name, :address, :phone, :website, :image)
+  params.require(:restaurant).permit(:name, :street, :phone, :email, :image)
 end
