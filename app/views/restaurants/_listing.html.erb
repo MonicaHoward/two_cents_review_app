@@ -1,0 +1,29 @@
+<div class="col-sm-12">
+  <div class="imagebox style2">
+    <div class="box-imagebox">
+      <div class="box-header">
+        <div class="box-image">
+          <%= image_tag @restaurant.image.url unless @restaurant.image.blank? %>
+          <%= link_to "Preview", @restaurant_path %>
+        </div>
+      </div><!-- /.box-header -->
+      <div class="box-content">
+        <div class="box-title ad">
+          <%= link_to "#{@restaurant.name}", restaurant_path %>
+        </div>
+        <ul class="rating">
+          <li>5 rating</li>
+          <li>Moderate</li>
+          <li>Restaurant</li>
+        </ul>
+        <div class="box-desc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+        <ul class="location">
+          <li class="address"><span class="ti-location-pin"></span>#{@restaurant.city}, #{restaurant.state}</li>
+          <li class="closed">Closed Now !</li>
+        </ul>
+      </div><!-- /.box-content -->
+    </div><!-- /.box-imagebox -->
+  </div><!-- /.imagebox style2 -->
+</div><!-- /.col-sm-12 -->
